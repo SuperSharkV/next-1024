@@ -1,4 +1,5 @@
 /** @type {import("pliny/config").PlinyConfig } */
+/** 大多数博客相关的信息  **/
 const siteMetadata = {
   title: '1024.style',
   author: 'SuperSharkV',
