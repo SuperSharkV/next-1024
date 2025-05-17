@@ -10,10 +10,10 @@ export default function Footer() {
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
         </div>
-        <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          Powered by{' '}
+        <div className="mb-8 flex text-sm text-gray-500 dark:text-gray-400">
+          <div>{`Powered by `}</div>
           <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
-            Tailwind Nextjs Theme
+            Tailwind Nextjs
           </Link>
         </div>
       </div>
