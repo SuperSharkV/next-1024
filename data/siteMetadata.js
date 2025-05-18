@@ -3,8 +3,8 @@
 const siteMetadata = {
   title: '1024.style',
   author: 'SuperSharkV',
-  headerTitle: 'TailwindBlog',
-  description: '一个博客',
+  headerTitle: '',
+  description: '方寸之中，无限可能',
   language: 'zh-cn',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
