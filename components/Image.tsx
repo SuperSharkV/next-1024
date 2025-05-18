@@ -1,9 +1,10 @@
 import NextImage, { ImageProps } from 'next/image'
 
-const basePath = process.env.BASE_PATH
-
-const Image = ({ src, ...rest }: ImageProps) => (
-  <NextImage src={`${basePath || ''}${src}`} {...rest} />
-)
+const Image = ({ src, ...rest }: ImageProps) => {
+  if (typeof src === 'string') {
+    return <NextImage src={src.startsWith('http') ? src : `/${src.replace(/^\/+/, '')}`} {...rest} />
+  }
+  return <NextImage src={src} {...rest} />
+}
 
 export default Image
